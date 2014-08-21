@@ -1,0 +1,14 @@
+<div class="row">
+        <div class="col-sm-12">
+            <a href="Posts/{{post.postName}}">
+              <h2>{{post.metaData.title}}</h2>
+              </a>
+            <div class="blog exceprt" ng-bind-html="post.excerptAsHtml">>
+            </div>
+            <h4>
+                <small class="text-muted" am-time-ago="post.metaData.createdDate" am-preprocess="utc">
+                </small>
+                <small ><a href="Posts/{{post.postName}}#disqus_thread" class="text-muted">Read More</a><small>
+        </h4>
+    </div>
+</div>
